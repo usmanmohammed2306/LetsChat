@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:background="@color/fui_bgGoogle"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mylogo" />
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/fui_bgGoogle"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your username"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black75PercentColor"
+                android:layout_marginTop="50dp"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold"/>
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                app:ccp_defaultNameCode="IN"
+                app:ccp_textSize="15dp"
+                app:ccp_dialogTextColor="@color/white"
+                android:visibility="invisible"
+                app:ccp_hidePhoneCode="true"
+                app:ccp_showFullName="true"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underlined_edittext"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:layout_marginTop="32dp"
+                android:textSize="15dp"
+                android:gravity="center_horizontal"
+                android:textColorHint="@color/black75PercentColor"
+                android:layout_marginBottom="100dp"
+                android:inputType="text"
+                android:hint="ABCD" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underlined_edittext"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:layout_marginTop="32dp"
+                android:textSize="15dp"
+                android:gravity="center_horizontal"
+                android:textColorHint="@color/black75PercentColor"
+                android:layout_marginBottom="100dp"
+                android:visibility="invisible"
+                android:inputType="phone"
+                android:hint="1234567890" />
+            <EditText
+                android:id="@+id/verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underlined_edittext"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:layout_marginTop="32dp"
+                android:textSize="15dp"
+                android:gravity="center_horizontal"
+                android:textColorHint="@color/black75PercentColor"
+                android:layout_marginBottom="50dp"
+                android:inputType="numberPassword"
+                android:visibility="invisible"
+                android:hint="123456" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_error"/>
+
+        <Button
+            android:id="@+id/phone_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Next" />
+    </LinearLayout>
+
+</LinearLayout>

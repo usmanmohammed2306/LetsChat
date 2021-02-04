@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LetsChat" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/moneyGreenColor</item>
+        <item name="colorPrimaryDark">@color/emeraldColor</item>
+        <item name="colorPrimaryVariant">#EDE7F6</item>
+        <item name="colorAccent">#7C4DFF</item>
+        <item name="colorSecondary">#FFC107</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/fui_bgGoogle</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/logoo</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="LoginTheme" parent="FirebaseUI">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorPrimaryDark">#512DA8</item>
+        <item name="colorPrimaryVariant">#EDE7F6</item>
+        <item name="colorAccent">#7C4DFF</item>
+        <item name="colorSecondary">#FFC107</item>
+        <item name="android:windowBackground">@drawable/clouds_1923545_v7</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.LetsChat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.LetsChat.AppBarOverlay" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/emeraldColor</item>
+        <item name="colorPrimaryDark">@color/moneyGreenColor</item>
+        <item name="colorPrimaryVariant">#EDE7F6</item>
+        <item name="colorAccent">#7C4DFF</item>
+        <item name="colorSecondary">#FFC107</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/fui_bgGoogle</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.LetsChat.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ChatTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/skyBlueColor</item>
+        <item name="colorPrimaryDark">@color/midnightBlueColor</item>
+        <item name="colorAccent">@color/warmGrayColor</item>
+    </style>
+</resources>
